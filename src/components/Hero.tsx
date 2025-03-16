@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
 
 interface HeroProps {
   title?: string;
@@ -10,37 +11,32 @@ interface HeroProps {
 
 export default function Hero({ title = "Monitoraggio Avanzato del Lago Maggiore", subtitle = "Sistema integrato di boe intelligenti per il controllo e la raccolta degli inquinanti organici persistenti." }: HeroProps) {
   return (
-    <section className="relative h-screen min-h-[600px] flex items-center justify-center text-white overflow-hidden">
+    <section className="relative h-screen min-h-[600px] flex items-start justify-center text-white overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/images/lake-maggiore.jpg" 
-          alt="Lago Maggiore" 
-          className="w-full h-full object-cover" 
+          src="/images/clear_water.jpeg" 
+          alt="" 
+          className="w-full h-full object-cover opacity-30" 
         />
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        
+        {/* Permanent semi-transparent overlay */}
+        <div className="absolute inset-0 bg-black opacity-40"></div>
       </div>
       
-      {/* Content */}
-      <div className="container mx-auto px-4 z-10 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">{title}</h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-10 font-medium">{subtitle}</p>
-          
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/monitoraggio" className="btn-primary">
-              Visualizza Dati
-            </Link>
-            <Link href="/progetto" className="btn-outline-white">
-              Scopri il Progetto
-            </Link>
-          </div>
-        </motion.div>
+      {/* Static Header Content - Always visible at the top */}
+      <div className="container mx-auto px-4 z-10 text-center pt-16 md:pt-24">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-xl [text-shadow:0_4px_8px_rgba(0,0,0,0.5)]">{title}</h1>
+        <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-10 font-medium drop-shadow-lg [text-shadow:0_2px_4px_rgba(0,0,0,0.5)]">{subtitle}</p>
+        
+        <div className="flex flex-wrap justify-center gap-4">
+          <Link href="/monitoraggio" className="btn-primary">
+            Visualizza Dati
+          </Link>
+          <Link href="/progetto" className="btn-outline-white">
+            Scopri il Progetto
+          </Link>
+        </div>
       </div>
       
       {/* Animated Wave */}
