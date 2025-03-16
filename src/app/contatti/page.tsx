@@ -3,7 +3,7 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { FiMail, FiLinkedin, FiGithub } from 'react-icons/fi';
+import { FiMail, FiLinkedin, FiGithub, FiMapPin, FiPhone } from 'react-icons/fi';
 
 export default function ContactPage() {
   const teamMembers = [
@@ -141,6 +141,25 @@ export default function ContactPage() {
                 </button>
               </div>
             </form>
+          </div>
+        </div>
+      </section>
+      
+      {/* Direct Contact Information */}
+      <section className="section bg-white py-12 border-t border-gray-200">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Contatto Diretto</h2>
+            <p className="text-gray-600 mb-6">
+              Per richieste urgenti o informazioni dirette, puoi contattarci via email:
+            </p>
+            
+            <div className="inline-flex items-center justify-center space-x-2 text-primary font-medium">
+              <FiMail size={20} />
+              <a href="mailto:contact@tommasosommaruga.com" className="hover:underline">
+                contact@tommasosommaruga.com
+              </a>
+            </div>
           </div>
         </div>
       </section>

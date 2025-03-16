@@ -72,8 +72,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <FiMail className="mr-2 text-primary" />
-                <a href="mailto:info@polymyboelago.ch" className="text-gray-300 hover:text-white font-medium">
-                  
+                <a href="mailto:contact@tommasosommaruga.com" className="text-gray-300 hover:text-white font-medium">
+                contact@tommasosommaruga.com
                 </a>
               </li>
               <li className="flex items-center">
@@ -97,4 +97,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-} 
+}

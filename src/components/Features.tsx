@@ -29,7 +29,7 @@ const Features: React.FC = () => {
     {
       icon: <FiAlertCircle />,
       title: "Sistema di Allerta",
-      description: "In caso di rilevamento di livelli anomali di inquinanti, il sistema invia automaticamente notifiche alle autorità competenti per interventi tempestivi nelle aree sensibili del Lago Maggiore."
+      description: "In caso di rilevamento di livelli anomali di inquinanti, il sistema invia automaticamente notifiche alle imbarcazioni competenti per interventi tempestivi nelle aree sensibili del Lago Maggiore."
     },
     {
       icon: <FiFilter />,
