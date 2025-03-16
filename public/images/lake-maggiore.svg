@@ -1,0 +1,28 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Sky -->
+  <rect width="1200" height="800" fill="#87CEEB" />
+  
+  <!-- Mountains -->
+  <polygon points="0,400 150,200 300,350 450,150 600,300 750,100 900,250 1050,180 1200,300 1200,400" fill="#6A7B76" />
+  <polygon points="0,450 150,250 300,400 450,200 600,350 750,150 900,300 1050,230 1200,350 1200,450" fill="#536A65" />
+  
+  <!-- Lake Maggiore -->
+  <path d="M200,400 C300,380 400,420 500,400 C600,380 700,390 800,410 C900,430 1000,420 1100,400 L1100,700 L200,700 Z" fill="#1E5AA8" />
+  
+  <!-- Reflection on Lake -->
+  <path d="M200,500 C300,520 400,480 500,500 C600,520 700,510 800,490 C900,470 1000,480 1100,500" stroke="white" stroke-width="1" fill="none" opacity="0.3" />
+  
+  <!-- Small Islands -->
+  <ellipse cx="400" cy="550" rx="30" ry="20" fill="#3A5F45" />
+  <ellipse cx="700" cy="480" rx="25" ry="15" fill="#3A5F45" />
+  <ellipse cx="900" cy="520" rx="35" ry="22" fill="#3A5F45" />
+  
+  <!-- Buoys -->
+  <circle cx="350" cy="450" r="5" fill="red" />
+  <circle cx="550" cy="480" r="5" fill="red" />
+  <circle cx="750" cy="520" r="5" fill="red" />
+  <circle cx="950" cy="470" r="5" fill="red" />
+  
+  <!-- Text Label -->
+  <text x="600" y="600" font-family="Arial" font-size="40" font-weight="bold" text-anchor="middle" fill="white">Lago Maggiore</text>
+</svg> 

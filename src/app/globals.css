@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0f6aac;
+  --primary-dark: #0a558c;
+  --accent: #eb5e28;
+  --light: #f8f9fa;
+  --dark: #242b38;
+}
+
+@layer base {
+  body {
+    @apply text-gray-800;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-gray-900;
+  }
+  
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-padded {
+    @apply container mx-auto px-4 py-12 md:py-16 lg:py-20;
+  }
+  
+  .section {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+  
+  .heading {
+    @apply text-3xl md:text-4xl font-bold mb-6;
+  }
+  
+  .subheading {
+    @apply text-xl md:text-2xl font-bold mb-4;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-md font-medium 
+      hover:bg-primary-dark transition-all inline-block;
+  }
+  
+  .btn-primary-sm {
+    @apply bg-primary text-white px-4 py-2 rounded-md font-medium 
+      hover:bg-primary-dark transition-all inline-block;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-800 px-6 py-3 rounded-md font-medium 
+      hover:bg-gray-300 transition-all inline-block;
+  }
+  
+  .btn-white {
+    @apply bg-white text-primary px-6 py-3 rounded-md font-medium 
+      hover:bg-gray-100 transition-all inline-block;
+  }
+  
+  .btn-outline-white {
+    @apply bg-transparent text-white border-2 border-white px-6 py-3 rounded-md font-medium 
+      hover:bg-white hover:text-primary transition-all inline-block;
+  }
+  
+  /* Feature Cards */
+  .feature-card {
+    @apply bg-white p-6 rounded-lg shadow-md border border-gray-200;
+  }
+  
+  .icon-container {
+    @apply text-primary text-3xl mb-4;
+  }
+  
+  .feature-icon {
+    @apply w-8 h-8;
+  }
+  
+  .feature-title {
+    @apply text-xl font-bold mb-3 text-gray-900;
+  }
+  
+  .feature-text {
+    @apply text-gray-800 font-medium;
+  }
+  
+  /* Navigation */
+  .nav-link {
+    @apply transition-all inline-block;
+  }
+  
+  .nav-link-mobile {
+    @apply transition-all block;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} 
